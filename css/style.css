@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.menu_principal {
+  position: sticky;
+  background: linear-gradient(to top, #f88315, #F83A01);
+  /* background-color: #e72208; */
+  height: 145px;
+  width: 1903px;
+  min-width: 245px;
+  min-height: 145px;
+  /* max-width: 1800px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px 20px 15px 20px;
+  border-bottom: 1px solid #FBFBFD;
+  box-shadow: 5px 0 10px #F83A01; }
+
+.menu_bar_items {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin-right: 20px;
+  align-items: center;
+  height: 100%; }
+  .menu_bar_items li {
+    border-radius: 20px;
+    margin: 0 40px; }
+    .menu_bar_items li a {
+      color: #1E1E1E;
+      font-family: Oswald;
+      font-size: 35px;
+      text-decoration: none;
+      /* text-shadow: 0px 0.5px 0px #CFD2DA, 0px -0.5px 0px #CFD2DA, 0.5px 0px 0px #CFD2DA, -0.5px 0px 0px #CFD2DA; */ }
+
+.menu_bar_items_log {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  margin-right: 30px;
+  align-items: center; }
+  .menu_bar_items_log li {
+    border-radius: 24px;
+    margin: 5px 15px; }
+    .menu_bar_items_log li a {
+      color: black;
+      font-family: Oswald;
+      font-size: 20px;
+      text-decoration: none; }
+
+#barraDesplegable {
+  display: none; }
+
+.menu_principal :hover {
+  color: #F9CA21;
+  transform: scaleY(1);
+  transform: scaleX(1); }
+
+.menu_bar_item_desplegable {
+  list-style: none;
+  position: relative;
+  cursor: pointer; }
+
+.sub_menus_main {
+  position: absolute;
+  top: 50px;
+  left: -3rem;
+  padding-left: -3rem;
+  gap: 0.5rem;
+  width: 16rem;
+  box-shadow: 0 0 10px red;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #f88315, #F83A01);
+  list-style: none;
+  text-align: center;
+  justify-items: baseline;
+  visibility: hidden; }
+
+.menu_bar_item_desplegable:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleY(0.8);
+  transform: scaleX(0.8); }
+
+.textProxTorneos {
+  margin: 20px; }
+
+.contenidoBox {
+  width: 90%;
+  max-width: 4000px;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.next_tournaments_column1, .next_tournaments_column2 {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%; }
+
+.principal_image_tournaments {
+  border-radius: 10px;
+  text-align: center;
+  min-width: 350px;
+  height: 100%;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  width: 35%;
+  border: 3px solid #F83A01;
+  box-shadow: 0 0 10px #F83A01;
+  animation: tarjetas1 2s infinite; }
+
+.secundary_image_tournaments {
+  border-radius: 10px;
+  min-height: 300px;
+  font-weight: bold;
+  padding: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  margin: 20px;
+  align-self: center;
+  border: 3px solid #a79710;
+  box-shadow: 0 0 10px yellow;
+  animation: tarjetas 2s infinite; }
+
+.texto {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+.promo_tournament_text {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: flex-start; }
+
+/* SECCION DE CONTACTO */
+.formulario, .form3, .form4 {
+  display: flex;
+  flex-direction: column; }
+
+.encabezadoContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+.form1, .form2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 10px; }
+
+.form3 {
+  margin-top: 10px; }
+
+.form4 {
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 10px; }
+
+.form5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 10px; }
+
+.contenedor_noticias {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 1fr 1fr 1.1fr 1.1fr;
+  grid-template-areas: "noticias_main_a noticias_main_a noticias_main_a" "noticias_main_b noticias_main_b noticias_main_b" "noticias_secundario1 noticias_secundario2 noticias_secundario3" "noticias_secundario4 noticias_secundario5 noticias_secundario6";
+  justify-items: center; }
+
+.noticias_main_a {
+  display: flex;
+  margin: 5%;
+  justify-content: center;
+  grid-area: noticias_main_a; }
+
+.noticias_main_b {
+  display: flex;
+  margin: 5%;
+  justify-content: center;
+  grid-area: noticias_main_b; }
+
+.image_notice_a, .noticia_texto_noticiaPrincial {
+  height: 300px;
+  width: 500px; }
+
+.contenedor_latampro {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "noticias_main_a noticias_main_a noticias_main_a" "noticias_main_b noticias_main_b noticias_main_b"; }
+
+.image_latampro_a {
+  height: 400px;
+  width: 400px; }
+
+.noticia_texto_noticiaPrincial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px; }
+
+.noticias_secundario {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px; }
+
+.error_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Oswald;
+  background-color: #000000; }
+
+.texto_error {
+  color: white; }
+
+.error_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+@keyframes tarjetas {
+  50% {
+    border-color: #F83A01; } }
+
+@keyframes tarjetas1 {
+  50% {
+    border-color: #F9CA21; } }
+
+main {
+  font-family: Oswald; }
+  main h2 {
+    font-size: 45px;
+    text-align: center; }
+
+body {
+  background-color: #ffee79;
+  font-family: Oswald; }
+
+.descripcionOrg {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  justify-content: space-around;
+  padding: 40px 20px;
+  padding-bottom: 6%; }
+
+.login {
+  margin-bottom: 100px;
+  margin-top: 200px;
+  text-align: center; }
+
+.botonesLog {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center; }
+  .botonesLog a {
+    margin: 10px; }
+
+.recuperarCuenta {
+  color: blue;
+  text-decoration: underline; }
+
+.encabezado {
+  text-align: center;
+  margin: 2%;
+  font-size: 30px; }
+
+.textProxTorneos {
+  text-align: center;
+  margin: 2%;
+  font-size: 60px; }
+
+.juegos {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  opacity: 0.4; }
+
+.logosJuegosMain {
+  /* border-radius: 20px; */
+  text-align: center;
+  padding: 5%;
+  background-size: cover;
+  background-position: center center;
+  width: 5%; }
+
+h4 {
+  padding-left: 20px;
+  padding-right: 15px; }
+
+.column_info_org {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; }
+
+.contenedorPagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contenedorPagina h4 {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px; }
+
+.seccionFooter {
+  display: grid;
+  position: sticky;
+  grid-template-columns: 2fr 1fr 4fr;
+  grid-template-rows: 200px;
+  background: linear-gradient(to top, #F83A01, #f88315);
+  margin-top: 500px;
+  border-radius: 20px 15px 20px 15px;
+  border-top: 1px solid white;
+  box-shadow: 5px 0 10px red;
+  justify-content: space-around;
+  grid-template-areas: "seccionCopyright socialMediaPanel contactoPanel"; }
+
+.seccionCopyright {
+  grid-area: seccionCopyright;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px;
+  grid-template-areas: "logoFooter textoFooterLogo" "logoFooter textoFooterLogo"; }
+
+.textoFooterLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.imgFooterLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.logoFooter {
+  height: 170px;
+  width: 170px; }
+
+.socialMediaPanel {
+  grid-area: socialMediaPanel;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-areas: "encabezadoSocialMedia encabezadoSocialMedia encabezadoSocialMedia" "imagenesSocialMedia imagenesSocialMedia imagenesSocialMedia" "imagenesSocialMedia imagenesSocialMedia imagenesSocialMedia";
+  align-content: center;
+  justify-items: center; }
+
+.encabezadoSocialMedia {
+  grid-area: encabezadoSocialMedia;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px; }
+
+.imagenesSocialMedia {
+  height: 50px;
+  width: 50px;
+  grid-area: imagenesSocialMedia; }
+
+.contactoPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .contactoPanel p {
+    font-size: 35px; }
+    .contactoPanel p a {
+      font-size: 25px;
+      text-decoration: none; }
+
+.imagen_Torneo {
+  height: 250px;
+  width: 250px; }
+
+.primer_columna_torneos_actuales {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  justify-content: space-around;
+  justify-items: center; }
+
+.texto_descripcion_torneo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+  .texto_descripcion_torneo p {
+    font-size: 20px; }
+
+@media screen and (max-width: 800px) {
+  .contenidoBox {
+    max-width: 800px; }
+  .menu_principal {
+    max-width: 400px;
+    flex-direction: column;
+    height: 170px; }
+  .menu_bar_items {
+    visibility: hidden; }
+  .menu_bar_items_log {
+    visibility: hidden; }
+  .textProxTorneos {
+    font-size: 25px;
+    margin-top: 35px; }
+  .descripcionOrg {
+    flex-direction: column;
+    align-items: center; }
+    .descripcionOrg .column_info_org {
+      width: 100%; }
+  .seccionFooter {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin-top: 35px; }
+  footer div {
+    display: flex;
+    flex-direction: column; }
+  footer div p {
+    margin-top: 15px; }
+  .juegos {
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+  .juegos .logosJuegosMain {
+    width: 290px;
+    padding: 25%; } }

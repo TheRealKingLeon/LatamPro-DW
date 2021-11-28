@@ -1,0 +1,68 @@
+@import './text-boxsize';
+
+.contenedor_noticias {
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr;
+	grid-template-rows: 1fr 1fr 1.1fr 1.1fr;
+	grid-template-areas: 
+	"noticias_main_a noticias_main_a noticias_main_a"
+	"noticias_main_b noticias_main_b noticias_main_b"
+	"noticias_secundario1 noticias_secundario2 noticias_secundario3"
+	"noticias_secundario4 noticias_secundario5 noticias_secundario6"
+	;
+	justify-items: center;
+}
+
+@mixin noticiasPrincipales ($gridarea) {
+	display: flex;
+	margin: 5%;
+	justify-content: center;
+	grid-area: $gridarea;
+	
+}
+.noticias_main_a {
+	@include noticiasPrincipales(noticias_main_a)
+	
+}
+
+.noticias_main_b {
+	@include noticiasPrincipales(noticias_main_b)
+	
+}
+
+.image_notice_a {
+	height: 300px;
+	width: 500px;
+	
+}
+
+.contenedor_latampro {
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"noticias_main_a noticias_main_a noticias_main_a"
+	"noticias_main_b noticias_main_b noticias_main_b"
+}
+
+.image_latampro_a {
+	height: 400px;
+	width: 400px;
+}
+
+.noticia_texto_noticiaPrincial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@extend .image_notice_a;
+	margin-left: 100px;
+	
+}
+
+.noticias_secundario{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 400px;
+}

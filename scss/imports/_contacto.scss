@@ -1,0 +1,50 @@
+	/* SECCION DE CONTACTO */
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .encabezadoContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .form1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 10px;
+    }
+    
+    .form2 {
+        @extend .form1;
+    }
+    
+    .form3 {
+        @extend .formulario;
+        margin-top: 10px;
+    
+    }
+    
+    .form4 {
+        @extend .formulario;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 10px;
+    
+    }
+
+    .form5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 10px;
+    
+    }

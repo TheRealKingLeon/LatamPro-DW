@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Crea tu cuenta para poder ingresar a los torneos de nuestra marca!">
-    <meta name="keywords" content="Esports, torneos, crear cuenta, pc, steam, pubg, garena, free fire">
-    <title>LATAM PRO: Crear Cuenta</title>
+    <meta name="description" content="Logueate con tu cuenta para poder anotarte a los mejores torneos de la region!">
+    <meta name="keywords" content="Esports, torneos, free fire, pubg, steam, pc, torneos online">
+    <title>LATAM PRO: Iniciar Sesion</title>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald#standard-styles">
-    <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <nav class="menuBar">
-            <img src=".../media/imagenes/logo.png" align=left width="184" height="184" alt="Logo de LATAM PRO"></a> 
-            <ul class="menuItems">
-                    <li><a href= "../index.html">HOME</a></li>
-                    <li class="menuDesplegable" ><a href= "./torneos.html">TORNEOS</a>
-                        <ul class="subMenuTorneos" >
-                            <li><a  href="./torneos.html">EN CURSO</a></li>
-                            <li><a  href="./torneos.html">COMPLETADO</a></li>
+        <nav class="menu_principal">
+            <img src="./media/imagenes/logo.png" align=left width="184" height="184" alt="Logo de LATAM PRO"></a> 
+            <ul class="menu_bar_items">
+                    <li><a href= "./index.html">HOME</a></li>
+                    <li class="menu_bar_item_desplegable" ><a href= "./torneos.html">TORNEOS</a>
+                        <ul class="sub_menus_main" >
+                            <li><a  href="./torneos/torneos-actuales.html">EN CURSO</a></li>
+                            <li><a  href="./torneos/torneos-pasados.html">COMPLETADO</a></li>
                         </ul>
                     </li>
                     <li><a href="./noticias.html">NOTICIAS</a></li>
-                    <li class="menuDesplegable"><a href="./latampro.html">LATAM PRO</a>
-                        <ul class="subMenuTorneos" >
+                    <li class="menu_bar_item_desplegable"><a href="./latampro.html">LATAM PRO</a>
+                        <ul class="sub_menus_main" >
                             <li><a  href="./latampro.html">Quienes Somos</a></li>
                             <li><a  href="./latampro.html">Nuestros PRO</a></li>
                         </ul>
@@ -33,14 +33,56 @@
 
                     <li><a href="./contacto.html">CONTACTO</a></li>               
             </ul>
-            <ul class="menuItems2">
-                <li><a href="./log_in.html">REGISTRARSE</a></li>
-                <li><!-- <a href="./pages/sign_in.html">INGRESAR</a> --><button class="boton">Ingresar</button></li>
+            <ul class="menu_bar_items_log">
+                <!-- <li><a href="./pages/log_in.html">REGISTRARSE</a></li> -->
+                <li ><a href="./log_in.html" button type="button" class="btn btn-light" >REGISTRARSE</button></a></li>
+                <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a>
+                    
+                </li>
             </ul>
         </nav>
 
     </header>
-
+    <main class="contenido">
+       
+        <div class="container">
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-6">
+                <h1 class="login">Ingresa tus datos para iniciar sesion</h1>
+              </div>
+              <div class="col">
+              </div>
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-6">
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="botonesLog">
+                        <span>
+                        <a href="../pages/sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a>
+                        <a href="../pages/sign_in.html" button type="button" class="btn btn-light">CREAR CUENTA</button></a>
+                    </span>
+                    <div class="recuperarCuenta">
+                        <a href="../pages/sign_in.html" >He olvidado mi contraseña. Como la recupero?</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                </div>
+              
+        </div>
+       
+        
+    </main>
     <footer class="seccionFooter">
         <div class='seccionCopyright'>
            <div class= 'imgFooterLogo'>
@@ -86,6 +128,6 @@
            </div>
        </div>
    </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 

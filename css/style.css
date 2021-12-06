@@ -66,7 +66,7 @@
 .sub_menus_main {
   position: absolute;
   top: 50px;
-  left: -3rem;
+  left: -4rem;
   padding-left: -3rem;
   gap: 0.5rem;
   width: 16rem;
@@ -208,6 +208,10 @@
   height: 300px;
   width: 500px; }
 
+.image_notice_b {
+  height: 300px;
+  width: 400px; }
+
 .contenedor_latampro {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
@@ -236,7 +240,8 @@
   justify-content: center;
   align-items: center;
   font-family: Oswald;
-  background-color: #000000; }
+  background-color: #000000;
+  height: 100%; }
 
 .texto_error {
   color: white; }
@@ -295,7 +300,8 @@ body {
 
 .recuperarCuenta {
   color: blue;
-  text-decoration: underline; }
+  text-decoration: underline;
+  margin-bottom: 200px; }
 
 .encabezado {
   text-align: center;
@@ -309,18 +315,20 @@ body {
 
 .juegos {
   display: flex;
-  width: 60%;
+  width: 80%;
   margin: auto;
   justify-content: space-between;
-  opacity: 0.4; }
+  opacity: 0.4;
+  margin-bottom: 150px; }
 
 .logosJuegosMain {
   /* border-radius: 20px; */
   text-align: center;
-  padding: 5%;
+  padding: 66px;
   background-size: cover;
   background-position: center center;
-  width: 5%; }
+  width: 250px;
+  height: 180px; }
 
 h4 {
   padding-left: 20px;
@@ -349,7 +357,7 @@ h4 {
   grid-template-columns: 2fr 1fr 4fr;
   grid-template-rows: 200px;
   background: linear-gradient(to top, #F83A01, #f88315);
-  margin-top: 500px;
+  /* margin-top: 500px; */
   border-radius: 20px 15px 20px 15px;
   border-top: 1px solid white;
   box-shadow: 5px 0 10px red;
@@ -456,10 +464,12 @@ h4 {
     flex-direction: column; }
   footer div p {
     margin-top: 15px; }
-  .juegos {
-    flex-direction: column;
-    width: 100%;
-    align-items: center; }
+  /* 	.juegos {
+		flex-direction: column;
+		width: 60%;
+		align-items: center;
+		margin-bottom: 150px;
+	} */
   .juegos .logosJuegosMain {
     width: 290px;
     padding: 25%; } }

@@ -27,3 +27,23 @@
     margin: 20px;
 
 }
+
+@media screen and (max-width: 600px) {
+	
+	.error_container {
+
+        flex-direction: column;
+    }
+    
+    .image_404 {
+        display: none;
+        
+    }
+
+    .texto_error {
+        text-align: center;
+        margin: 10px;
+    }
+
+	
+}

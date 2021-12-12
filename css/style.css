@@ -66,8 +66,8 @@
 .sub_menus_main {
   position: absolute;
   top: 50px;
-  left: -4rem;
-  padding-left: -3rem;
+  left: -3.5rem;
+  /* padding-left: 100px; */
   gap: 0.5rem;
   width: 16rem;
   box-shadow: 0 0 10px red;
@@ -80,12 +80,13 @@
   justify-items: baseline;
   visibility: hidden; }
 
-.menu_bar_item_desplegable:hover ul {
-  visibility: visible;
-  opacity: 1;
-  transform: scaleY(0.8);
-  transform: scaleX(0.8); }
+/* .menu_bar_item_desplegable:hover ul {
+	visibility: visible;
+	opacity: 1;
+	transform: scaleY(0.8);
+	transform: scaleX(0.8);
 
+} */
 .textProxTorneos {
   margin: 20px; }
 
@@ -148,6 +149,30 @@
   flex-direction: column;
   align-content: space-around;
   justify-content: flex-start; }
+
+.primer_columna_torneos_actuales {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  justify-content: space-around;
+  justify-items: center; }
+
+.texto_descripcion_torneo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+  .texto_descripcion_torneo p {
+    font-size: 20px; }
+
+@media screen and (max-width: 600px) {
+  .contenedor_torneos_actuales {
+    display: flex;
+    max-width: 540px;
+    justify-content: center; }
+  .primer_columna_torneos_actuales {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 3fr; } }
 
 /* SECCION DE CONTACTO */
 .formulario, .form3, .form4 {
@@ -235,6 +260,24 @@
   height: 300px;
   width: 400px; }
 
+@media screen and (max-width: 600px) {
+  .contenedor_noticias {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "noticias_main_a" "noticias_main_b" "noticias_secundario1" "noticias_secundario2" "noticias_secundario3";
+    justify-items: center; }
+  .noticias_main_a {
+    display: flex;
+    flex-direction: column; }
+  .noticias_main_b {
+    display: flex;
+    flex-direction: column; }
+  .noticia_texto_noticiaPrincial {
+    margin-left: 0px; }
+  .contenedor_latampro {
+    max-width: 600px; } }
+
 .error_container {
   display: flex;
   justify-content: center;
@@ -256,6 +299,15 @@
   flex-direction: column;
   align-items: center;
   margin: 20px; }
+
+@media screen and (max-width: 600px) {
+  .error_container {
+    flex-direction: column; }
+  .image_404 {
+    display: none; }
+  .texto_error {
+    text-align: center;
+    margin: 10px; } }
 
 @keyframes tarjetas {
   50% {
@@ -421,25 +473,11 @@ h4 {
   height: 250px;
   width: 250px; }
 
-.primer_columna_torneos_actuales {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  justify-content: space-around;
-  justify-items: center; }
-
-.texto_descripcion_torneo {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem; }
-  .texto_descripcion_torneo p {
-    font-size: 20px; }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .contenidoBox {
     max-width: 800px; }
   .menu_principal {
-    max-width: 400px;
+    max-width: 100%;
     flex-direction: column;
     height: 170px; }
   .menu_bar_items {
@@ -458,18 +496,25 @@ h4 {
     display: flex;
     flex-direction: column;
     align-content: stretch;
-    margin-top: 35px; }
+    margin-top: 0px;
+    max-width: 100%; }
   footer div {
     display: flex;
     flex-direction: column; }
   footer div p {
     margin-top: 15px; }
-  /* 	.juegos {
-		flex-direction: column;
-		width: 60%;
-		align-items: center;
-		margin-bottom: 150px;
-	} */
+  .juegos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px; }
   .juegos .logosJuegosMain {
-    width: 290px;
-    padding: 25%; } }
+    height: 100%;
+    width: 190px; }
+  .textProxTorneos {
+    color: black;
+    text-decoration: none; }
+  .menu_bar_items {
+    display: none;
+    max-width: 450px; } }

@@ -72,3 +72,39 @@
 	height: 300px;
 	width: 400px;
 }
+
+@media screen and (max-width: 600px) {
+	
+	.contenedor_noticias {
+		display: grid;
+		grid-template-columns: 3fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		"noticias_main_a"
+		"noticias_main_b"
+		"noticias_secundario1"
+        "noticias_secundario2"
+        "noticias_secundario3";
+		justify-items: center;
+	}
+
+	.noticias_main_a {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.noticias_main_b {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.noticia_texto_noticiaPrincial {
+		margin-left: 0px;
+	}
+
+	.contenedor_latampro {
+		max-width: 600px;
+	}
+}

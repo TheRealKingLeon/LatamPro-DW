@@ -76,3 +76,35 @@
 	align-content: space-around;
 	justify-content: flex-start;
 }
+
+.primer_columna_torneos_actuales{
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr 3fr;
+	justify-content: space-around;
+	justify-items: center;
+}
+
+.texto_descripcion_torneo{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+		p{
+			font-size: 20px;
+		}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.contenedor_torneos_actuales {
+		display: flex;
+		max-width: 540px;
+		justify-content: center;
+	}
+
+	.primer_columna_torneos_actuales{
+		margin-top: 100px;
+		display: grid;
+		grid-template-columns: 3fr;
+	}
+}

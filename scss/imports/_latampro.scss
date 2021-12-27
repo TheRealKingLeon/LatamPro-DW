@@ -29,14 +29,14 @@
 
 .image_latampro_a {
 	height: 300px;
-	width: 500px;
+	width: 300px;
 	border-radius: 35px 40px 35px 40px;
 	
 }
 
 .image_latampro_b {
 	height: 300px;
-	width: 400px;
+	width: 300px;
 	border-radius: 35px 40px 35px 40px;
 	
 }
@@ -63,6 +63,39 @@
 }
 
 @media screen and (max-width: 900px) {
+	
+	.contenedor_latampro {
+		display: grid;
+		grid-template-columns: 4fr 4fr 4fr;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		grid-template-areas: 
+		"latampro_main_a latampro_main_a latampro_main_a"
+		"latampro_main_b latampro_main_b latampro_main_b"
+	}
+
+	.latampro_main_a {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.latampro_main_b {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.text_Latampro_Bio {
+		margin-left: 0px;
+	}
+
+	.contenedor_latampro {
+		max-width: 100vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	
 	.contenedor_latampro {
 		display: grid;

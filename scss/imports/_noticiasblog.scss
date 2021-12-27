@@ -11,6 +11,7 @@
 	"noticias_secundario4 noticias_secundario5 noticias_secundario6"
 	;
 	justify-items: center;
+	align-items: center;
 }
 
 @mixin noticiasPrincipales ($gridarea) {
@@ -42,14 +43,6 @@
 	
 }
 
-.contenedor_latampro {
-	display: grid;
-	grid-template-columns: 4fr 4fr 4fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas: 
-	"noticias_main_a noticias_main_a noticias_main_a"
-	"noticias_main_b noticias_main_b noticias_main_b"
-}
 
 .image_latampro_a {
 	height: 400px;
@@ -66,17 +59,9 @@
 	
 }
 
-.noticias_secundario{
-	display: flex;
-	flex-direction: column;
-	height: 300px;
-	width: 400px;
-}
 
-.noticias_secundarias {
-	display: flex;
-	gap: 200px;
-}
+
+
 
 @media screen and (max-width: 900px) {
 	
@@ -89,7 +74,7 @@
 		"noticias_main_b"
 		"noticias_secundario1"
         "noticias_secundario2";
-		justify-items: center;
+		justify-content: center;
 	}
 
 	.noticias_main_a {
@@ -111,19 +96,18 @@
 	.contenedor_latampro {
 		max-width: 600px;
 	}
-}
 
-
-.contenedor_noticias {
-	display: grid;
-	grid-template-columns: 3fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
-	grid-template-areas: 
-	"noticias_main_a"
-	"noticias_main_b"
-	"noticias_secundario1"
-	"noticias_secundario2";
-	justify-items: center;
+	.contenedor_noticias {
+		display: grid;
+		grid-template-columns: 3fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+		grid-template-areas: 
+		"noticias_main_a"
+		"noticias_main_b"
+		"noticias_secundario1"
+		"noticias_secundario2";
+		justify-items: center;
+	}
 }
 
 @mixin noticiasPrincipales ($gridarea) {
@@ -139,6 +123,7 @@
 	border-radius: 15px 20px 15px 20px;
 	padding: 15px 15px 15px 15px;
 	box-shadow: 5px 0 10px $rojo;
+	align-items: center
 	
 	
 }
@@ -181,11 +166,26 @@
 	justify-content: center;
 	align-items: center;
 	@extend .image_notice_a;
-	margin-left: 100px;
+	
 	
 }
 
 .noticias_secundario{
+	display: flex;
+	flex-direction: column;
+	height: 228px;
+	width: 400px;
+	border: 8px solid $naranja;
+	border-radius: 15px 20px 15px 20px;
+	padding: 15px 15px 15px 15px;
+	box-shadow: 0px 0px 10px 10px $naranja;
+	margin-left: 20px;
+	
+	
+	
+}
+
+.noticias_secundario2{
 	display: flex;
 	flex-direction: column;
 	height: 300px;
@@ -216,7 +216,19 @@
 	.noticias_main_a {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		
+	}
+
+	.noticias_secundario2{ 
+		grid-area: noticias_secundario2;
+	}
+
+	.noticias_secundario{ 
+		grid-area: noticias_secundario1;
+		height: 165px;
+		width: 290px;
+		margin-bottom: 25px;
 	}
 
 	.noticias_main_b {
@@ -232,7 +244,27 @@
 	.contenedor_latampro {
 		max-width: 600px;
 	}
+	.image_notice_a {
+		height: 344px;
+		width: 306px;
+	}
 
+	.image_notice_b {
+		height: 234px;
+		width: 290px;
+	}
+
+	.noticias_secundario2 {
+		display: flex;
+		flex-direction: column;
+		height: 231px;
+		width: 290px;
+		border: 8px solid #F2A81D; 
+		border-radius: 15 20px 15px 20px;
+		padding: 15px 15px 15px 15px;
+		box-shadow: 0px 0px 10px 10px #f2a81d;
+		margin-left: 5px;
+	}
 
 }
 
@@ -248,16 +280,31 @@
 		width: 290px;
 	}
 
+
+
 	.noticias_secundario {
 		display: flex;
 		flex-direction: column;
-		height: 292px;
-		width: 334px;
+		height: 202px;
+		width: 1px;
 		border: 8px solid #F2A81D; 
 		border-radius: 15 20px 15px 20px;
 		padding: 15px 15px 15px 15px;
 		box-shadow: 0px 0px 10px 10px #f2a81d;
-		margin-left: -10px;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+
+	.noticias_secundario2 {
+		display: flex;
+		flex-direction: column;
+		height: 272px;
+		width: 339px;
+		border: 8px solid #F2A81D; 
+		border-radius: 15 20px 15px 20px;
+		padding: 15px 15px 15px 15px;
+		box-shadow: 0px 0px 10px 10px #f2a81d;
+		margin-left: 5px;
 	}
 
 	.texto_noticiah3 {

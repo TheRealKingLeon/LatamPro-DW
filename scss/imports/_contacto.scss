@@ -42,9 +42,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 31px;
         flex-wrap: wrap;
         align-content: center;
-        margin-top: 10px;
+        margin: 10px 0 60px 0;
     
     }
+
+    .contenedorPagina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    .contenedorPagina h4 {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+    }
+
+   /*  .contact_style_conteiner {
+        display: flex;
+    } */

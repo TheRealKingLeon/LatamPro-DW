@@ -1,110 +1,122 @@
-.textProxTorneos {
-	margin: 20px;
+.encabezado_Torneos {
+	padding-top: 50px ;
 }
 
-.contenidoBox {
-	width: 90%;
-	max-width: 4000px;
-	margin: auto;
-	padding: 40px 0;
+/* MODIFICACION DE LAS FILAS  Y COLUMNAS*/
+
+.primer_columna_torneos_actuales {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	gap: 30px;
+	padding: 50px 50px 50px 50px;
+	justify-content: center;
+}
+
+.segunda_columna_torneos_actuales {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 50px 50px 50px 50px;
+	justify-content: center;
+
+}
+
+
+/* DISTRIBUCION DE PLACAS DE TORNEOS */
+
+.ficha_Torneo {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	height: 450px;
+	padding: 10px 10px 10px 6px;
+	border-radius: 15px 20px 15px 20px;
+	border: 4px solid $rojo;
+	box-shadow: 2px 2px 2px $rojo;
+	
+}
+.head_Torneo {
+	width: 300px;
+	height: 200px;
+	color: white;
+	border-radius: 15px 20px 15px 20px;
+	
+}
+
+.grafica_Torneo {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	
+}
+
+.imagen_Torneos {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.bloque_Participantes {
+	position: relative;
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	
+}
+
+.bloque_Modalidad {
+	position: relative;
+	float: right;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.body_Torneo {
+	position: relative;
+	background: linear-gradient(to top, $blanco  , $gris); 
+	width: 300px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-left: 15px;
+}
+
+.footer_Torneo {
+	display: flex;
+	gap: 100px;
+	width: 300px;
+	height: 39px;
+	background: $negro;
 	align-items: center;
-	
-}
-
-.next_tournaments_column1{
-	display: flex;
-	flex-direction: column;
-	max-height: 100%;
-}
-
-.next_tournaments_column2{
-	@extend .next_tournaments_column1;
-}
-
-
-.principal_image_tournaments {
-	border-radius: 10px;
-	text-align: center;
-	min-width: 350px;
-	height: 100%;
-	padding: 20px;
-	background-size: cover;
-	background-position: center center;
-	width: 35%;
-	border: 3px solid #F83A01;
-	box-shadow: 0 0 10px #F83A01;
-	animation: tarjetas1 2s infinite;
-
-}
-
-.secundary_image_tournaments {
-	border-radius: 10px;
-	min-height: 300px;
-	font-weight: bold;
-	padding: 20px;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	width: 350px;
-	margin: 20px;
-	align-self: center;
-	border: 3px solid rgb(167, 151, 16);
-	box-shadow: 0 0 10px yellow;
-	animation: tarjetas 2s infinite;
-	
-
-}
-
-.texto {
-	height: 100%;
+	justify-content: center;
 	color: white;
+	border-radius:  0px 0px 15px 15px;
+}
+
+.texto_Modalidad {
+	background: rgb(53, 52, 51);
+}
+
+.texto_Participantes {
+	background: rgb(53, 52, 51);
+}
+
+.texto_Juego {
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+.texto_Titulo {
+	font-size: 23px;
+	padding-top: 5px;
+	font-style: italic;
+}
+
+.texto_Organizacion {
 	display: flex;
-	flex-direction: column;
-	align-content: stretch;
-	justify-content: flex-end;
-	align-items: flex-start;
-}
+	gap: 10px;
+	padding-top: 20px;
 
-.promo_tournament_text {
-	height: 100%;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-content: space-around;
-	justify-content: flex-start;
-}
-
-.primer_columna_torneos_actuales{
-	margin-top: 100px;
-	display: grid;
-	grid-template-columns: 3fr 3fr 3fr 3fr;
-	justify-content: space-around;
-	justify-items: center;
-}
-
-.texto_descripcion_torneo{
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 2rem;
-		p{
-			font-size: 20px;
-		}
-}
-
-@media screen and (max-width: 600px) {
-	
-	.contenedor_torneos_actuales {
-		display: flex;
-		max-width: 540px;
-		justify-content: center;
-	}
-
-	.primer_columna_torneos_actuales{
-		margin-top: 100px;
-		display: grid;
-		grid-template-columns: 3fr;
-	}
 }

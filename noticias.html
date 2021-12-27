@@ -10,45 +10,38 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald#standard-styles">
     <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="menu_principal">
-            <a href="./index.html"><img src="./media/imagenes/logo.png" align=left width="184" height="184" alt="Logo de LATAM PRO"></a>  
-            <ul class="menu_bar_items">
-                    <li><a href= "./index.html">HOME</a></li>
-                    <li class="menu_bar_item_desplegable" ><a href= "./torneos.html">TORNEOS</a>
-                        <ul class="sub_menus_main" >
-                            <li><a  href="./torneos/torneos-actuales.html">EN CURSO</a></li>
-                            <li><a  href="./torneos/torneos-pasados.html">COMPLETADO</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./noticias.html">NOTICIAS</a></li>
-                    <li class="menu_bar_item_desplegable"><a href="./latampro.html">LATAM PRO</a>
-                        <ul class="sub_menus_main" >
-                            <li><a  href="./latampro.html">Quienes Somos</a></li>
-                            <li><a  href="./latampro.html">Nuestros PRO</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="./contacto.html">CONTACTO</a></li>               
-            </ul>
+            <input type="checkbox" id="check"> 
+            <label for="check" class="checkbtn">   
+                <i class="fas fa-bars"></i>    
+            </label> 
+            <!-- <div class="logo_position"><img class='logo' src="./media/imagenes/logo.png" alt=""></div>  -->
+            <a href="./index.html" class="enlace" >
+                <img src="./media/imagenes/logo.png" alt="Logo de LATAM PRO Institucional" class="logo">
+            </a> 
             <ul class="menu_bar_items_log">
-                <!-- <li><a href="./pages/log_in.html">REGISTRARSE</a></li> -->
                 <li ><a href="./log_in.html" button type="button" class="btn btn-light" >REGISTRARSE</button></a></li>
-                <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a>
-                    
-                </li>
+                <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a></li>
+            </ul>  
+                <ul class="menu_bar_items">
+                    <li><a href= "./index.html">HOME</a></li>
+                    <li><a href= "./torneos.html">TORNEOS</a></li>
+                    <li><a href="./noticias.html">NOTICIAS</a></li>
+                    <li><a href="./latampro.html">LATAM PRO</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>             
             </ul>
-        </nav>
+            
 
+        </nav>
     </header>
     <main>
         <div class="contenedor_noticias">
             <div class="noticias_main_a">
-                <div>
-                    <img class= "image_notice_a" src="./media/imagenes/noticia1.png" alt="Foto de noticias referida a x asunto">
-                </div>
+                <img class= "image_notice_a" src="./media/imagenes/noticia1.png" alt="Foto de noticias referida a x asunto">
                 <div class="noticia_texto_noticiaPrincial">
                     <p><h3>KRU se queda con el clasico Sudamericano</h3></p>
                     <p>En el partido de eliminación del grupo B, KRÜ superó a FURIA por 2-1 (11-13 Fracture; 13-8 Ascent; 13-9 Haven) y se mantiene con vida en 
@@ -59,9 +52,7 @@
                 </div>
             </div>
             <div class="noticias_main_b">
-                <div>
-                    <img class= "image_notice_a" src="./media/imagenes/noticia2.png" alt="Foto de noticias referida a x asunto">
-                </div>
+                <img class= "image_notice_a" src="./media/imagenes/noticia2.png" alt="Foto de noticias referida a x asunto">
                 <div class="noticia_texto_noticiaPrincial">
                     <p><h3>PGC 2021: KPI Avanza a la Final</h3></p>
                     <p>El PUBG Global Championship, mundial del battle royale a cargo de PUBG Corporation de Bluehole Inc., hoy vivió el cierre de su primera 
@@ -71,33 +62,35 @@
                         16 clasificados para el fin de semana..</p>
                 </div>
             </div>
-            <div class="noticias_secundario">
-                <div>
-                    <img class= "image_notice_b" src="./media/imagenes/noticia3.png" alt="Foto de noticias referida a x asunto">
+            <div class="noticias_secundarias">
+                <div class="noticias_secundario">
+                    <div>
+                        <img class= "image_notice_b" src="./media/imagenes/noticia3.png" alt="Foto de noticias referida a x asunto">
+                    </div>
+                    <div>
+                        <p><h3 class="texto_noticiah3" >BLAST Premier World Final: el anticipado evento de CSGO no contará con audiencia en vivo</h3></p>
+                        <p>Tras la gran victoria de Natus Vincere en el escenario de Copenhague de las BLAST Premier Fall Finals ante Team Vitality, 
+                            el circuito anual de CSGO BLAST dará paso a sus finales mundiales con los ocho mejores equipos. Lamentablemente, 
+                            acorde al reporte de HLTV, la última instancia se disputará sin audiencia en vivo debido al empeoramiento del contexto 
+                            de pandemia de COVID-19. Aunque las Fall Finals contaron con público en la Royal Arena de Copenhague (Dinamarca), 
+                            esta vez los equipos competirán en el estudio de BLAST en la misma ciudad..</p>
+                    </div>
                 </div>
-                <div>
-                    <p><h3>BLAST Premier World Final: el anticipado evento de CSGO no contará con audiencia en vivo</h3></p>
-                    <p>Tras la gran victoria de Natus Vincere en el escenario de Copenhague de las BLAST Premier Fall Finals ante Team Vitality, 
-                        el circuito anual de CSGO BLAST dará paso a sus finales mundiales con los ocho mejores equipos. Lamentablemente, 
-                        acorde al reporte de HLTV, la última instancia se disputará sin audiencia en vivo debido al empeoramiento del contexto 
-                        de pandemia de COVID-19. Aunque las Fall Finals contaron con público en la Royal Arena de Copenhague (Dinamarca), 
-                        esta vez los equipos competirán en el estudio de BLAST en la misma ciudad..</p>
-                </div>
-            </div>
-            <div class="noticias_secundario">
-                <div>
-                    <img class= "image_notice_b" src="./media/imagenes/noticia4.png" alt="Foto de noticias referida a x asunto">
-                </div>
-                <div>
-                    <p><h3>MakerDAO y Community Gaming combinan eSports y criptomonedas en una Serie de torneos para Latinoamérica</h3></p>
-                    <p>MakerDAO y Community Gaming unen esfuerzos en el lanzamiento de Crypto Maker Series, una serie de torneos para impulsar el uso de 
-                        la stablecoin DAI a través de los eSports. La serie está compuesta por nueve torneos en tres disciplinas populares en América Latina. 
-                        Así lo informaron a Cointelegraph en Español, a través de un comunicado.
+                <div class="noticias_secundario">
+                    <div>
+                        <img class= "image_notice_b" src="./media/imagenes/noticia4.png" alt="Foto de noticias referida a x asunto">
+                    </div>
+                    <div>
+                        <p><h3 class="texto_noticiah3">MakerDAO y Community Gaming combinan eSports y criptomonedas en una Serie de torneos para Latinoamérica</h3></p>
+                        <p>MakerDAO y Community Gaming unen esfuerzos en el lanzamiento de Crypto Maker Series, una serie de torneos para impulsar el uso de 
+                            la stablecoin DAI a través de los eSports. La serie está compuesta por nueve torneos en tres disciplinas populares en América Latina. 
+                            Así lo informaron a Cointelegraph en Español, a través de un comunicado.
 
-                        Según explicaron, se trata de nueve eventos flash para CS:GO, Free Fire y Dota2 que se llevarán a cabo en el último trimestre de 2021. 
-                        La serie es una de las muchas series de torneos que Community Gaming ha planeado.</p>
+                            Según explicaron, se trata de nueve eventos flash para CS:GO, Free Fire y Dota2 que se llevarán a cabo en el último trimestre de 2021. 
+                            La serie es una de las muchas series de torneos que Community Gaming ha planeado.</p>
+                    </div>
                 </div>
-            </div>
+        </div>
 <!--             <div class="noticias_secundario">
                 <div >
                     <img src="./media/imagenes/7.png" alt="Foto de noticias referida a x asunto">

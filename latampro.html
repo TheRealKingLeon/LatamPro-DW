@@ -10,51 +10,46 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald#standard-styles">
     <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="menu_principal">
-            <img src="./media/imagenes/logo.png" align=left width="184" height="184" alt="Logo de LATAM PRO"></a> 
-            <ul class="menu_bar_items">
-                    <li><a href= "./index.html">HOME</a></li>
-                    <li class="menu_bar_item_desplegable" ><a href= "./torneos.html">TORNEOS</a>
-                        <ul class="sub_menus_main" >
-                            <li><a  href="./torneos/torneos-actuales.html">EN CURSO</a></li>
-                            <li><a  href="./torneos/torneos-pasados.html">COMPLETADO</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./noticias.html">NOTICIAS</a></li>
-                    <li class="menu_bar_item_desplegable"><a href="./latampro.html">LATAM PRO</a>
-                        <ul class="sub_menus_main" >
-                            <li><a  href="./latampro.html">Quienes Somos</a></li>
-                            <li><a  href="./latampro.html">Nuestros PRO</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="./contacto.html">CONTACTO</a></li>               
-            </ul>
+            <input type="checkbox" id="check"> 
+            <label for="check" class="checkbtn">   
+                <i class="fas fa-bars"></i>    
+            </label> 
+            <!-- <div class="logo_position"><img class='logo' src="./media/imagenes/logo.png" alt=""></div>  -->
+            <a href="./index.html" class="enlace" >
+                <img src="./media/imagenes/logo.png" alt="Logo de LATAM PRO Institucional" class="logo">
+            </a> 
             <ul class="menu_bar_items_log">
-                <!-- <li><a href="./pages/log_in.html">REGISTRARSE</a></li> -->
                 <li ><a href="./log_in.html" button type="button" class="btn btn-light" >REGISTRARSE</button></a></li>
-                <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a>
-                    
-                </li>
+                <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a></li>
+            </ul>  
+                <ul class="menu_bar_items">
+                    <li><a href= "./index.html">HOME</a></li>
+                    <li><a href= "./torneos.html">TORNEOS</a></li>
+                    <li><a href="./noticias.html">NOTICIAS</a></li>
+                    <li><a href="./latampro.html">LATAM PRO</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>             
             </ul>
-        </nav>
+            
 
+        </nav>
     </header>
 
     <main>
         <p></p>
         <p></p>
-        <h2>NUESTROS PRO</h2>
+        <h2 class="latampro_encabezado">NUESTROS PRO</h2>
         <div class="contenedor_latampro">
             
-            <div class="noticias_main_a">
+            <div class="latampro_main_a">
                 <div>
                     <img class= "image_latampro_a" src="./media/imagenes/leonardo.png" alt="Foto de perfil 1">
                 </div>
-                <div class="noticia_texto_noticiaPrincial">
+                <div class="text_Latampro_Bio">
                     <p><h3>Leonardo Suasnavar</h3></p>
                     <p>Leonardo tiene 27 años, posee mas de 4 años de experiencia en el manejo de comunidades como PUBG, APEX y Valorant. Su experiencia coorporativa
                         le da las posibilidades de poder realizar sus acciones como CEO de la organizacion. 
@@ -63,11 +58,11 @@
                     </p>
                 </div>
             </div>
-            <div class="noticias_main_b">
+            <div class="latampro_main_b">
                 <div>
                     <img class= "image_latampro_a" src="./media/imagenes/lucasiglesias.png" alt="Foto de perfil 2">
                 </div>
-                <div class="noticia_texto_noticiaPrincial">
+                <div class="text_Latampro_Bio">
                     <p><h3>Lucas Iglesias</h3></p>
                     <p>Nuestro Esports League Ops Manager, posee mas de 10 años de experiencia en el rubro de los Esports, posee experiencia tanto desde el campo del
                         Community Managment, como en el campo del manejo de grandes equipos de trabajo, tambien posee mas de 2 años de experiencia como Tournament Operator

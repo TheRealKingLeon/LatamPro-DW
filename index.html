@@ -10,45 +10,42 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald#standard-styles">
     <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
 </head>
+
 <body>
     <header>
-            <nav class="menu_principal">
-                <a href="./index.html"><img src="./media/imagenes/logo.png" align=left width="184" height="184" alt="Logo de LATAM PRO"></a>
+        <nav class="menu_principal">
+            <input type="checkbox" id="check"> 
+            <label for="check" class="checkbtn">   
+                <i class="fas fa-bars"></i>    
+            </label> 
+            <!-- <div class="logo_position"><img class='logo' src="./media/imagenes/logo.png" alt=""></div>  -->
+            <a href="./index.html" class="enlace" >
+                <img src="./media/imagenes/logo.png" alt="Logo de LATAM PRO Institucional" class="logo">
+            </a> 
+            <ul class="menu_bar_items_log">
+                <li ><a href="./log_in.html" button type="button" class="btn btn-light" >REGISTRARSE</button></a></li>
+                <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a></li>
+            </ul>  
                 <ul class="menu_bar_items">
-                        <li><a href= "./index.html">HOME</a></li>
-                        <li class="menu_bar_item_desplegable" ><a href= "./torneos.html">TORNEOS</a>
-                            <ul class="sub_menus_main" >
-                                <li><a  href="./torneos/torneos-actuales.html">EN CURSO</a></li>
-                                <li><a  href="./torneos/torneos-pasados.html">COMPLETADO</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./noticias.html">NOTICIAS</a></li>
-                        <li class="menu_bar_item_desplegable"><a href="./latampro.html">LATAM PRO</a>
-                            <ul class="sub_menus_main" >
-                                <li><a  href="./latampro.html">Quienes Somos</a></li>
-                                <li><a  href="./latampro.html">Nuestros PRO</a></li>
-                            </ul>
-                        </li>
+                    <li><a href= "./index.html">HOME</a></li>
+                    <li><a href= "./torneos.html">TORNEOS</a></li>
+                    <li><a href="./noticias.html">NOTICIAS</a></li>
+                    <li><a href="./latampro.html">LATAM PRO</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>             
+            </ul>
+            
 
-                        <li><a href="./contacto.html">CONTACTO</a></li>               
-                </ul>
-                <ul class="menu_bar_items_log">
-                    <!-- <li><a href="./pages/log_in.html">REGISTRARSE</a></li> -->
-                    <li ><a href="./log_in.html" button type="button" class="btn btn-light" >REGISTRARSE</button></a></li>
-                    <li><a href="./sign_in.html" button type="button" class="btn btn-light">INICIAR SESION</button></a>
-                        
-                    </li>
-                </ul>
-            </nav>
-
+        </nav>
     </header>
     <main>
               <!-- Noticias y Torneos Actuales -->
-    <div><a href="./torneos.html"><h1 class="textProxTorneos">PROXIMOS EVENTOS - LATAM PRO</h1></a></div>
+    <div><h1 class="textProxTorneos">PROXIMOS EVENTOS - LATAM PRO</h1></div>
      <section class="contenidoBox">
-        <div class="principal_image_tournaments">    
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="principal_image_tournaments">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -58,13 +55,11 @@
                   <div class="carousel-item active">
                     <a href="https://www.communitygaming.io/tournament/latam-master-showdown-pubg-4"><img src="./media/imagenes/torneo1.png" class="d-block w-100" alt="Banner de Torneo de Free Fire en LATAM PRO"></a>
                     <div class="carousel-caption d-none d-md-block">
-                      <!-- <h5>Torneo 1</h5> -->
                     </div>
                   </div>
                   <div class="carousel-item">
                     <a href="https://www.communitygaming.io/tournament/promocional-starcraft-bw-bolivia"><img src="./media/imagenes/torneo2.png" class="d-block w-100" alt="Banner de Torneo de Free Fire en LATAM PRO"></a>
                     <div class="carousel-caption d-none d-md-block">
-                      <!-- <h5>Torneo 2</h5> -->
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -84,47 +79,35 @@
                 </button>
               </div>
         </div>
-            <div class="next_tournaments_column1">
-                <div class="secundary_image_tournaments" style="background-image: url(./media/imagenes/5.jpg);" >   
-                    <div class="promo_tournament_text">
-                        <h3>Torneo 2</h3>
-                        <p class="lh-sm">13 de Noviembre</p>
-                        <p>Prize = 750 U$D</p>
-                    </div>
+        <div class="next_tournaments_column2">
+            <div class="secundary_image_tournaments">
+                <a href="https://www.communitygaming.io/tournament/latam-sur-mobile-crypto-maker-series-free-fire-3">
+                    <img class="img_home_tournaments1" src="./media/imagenes/torneo3.png" alt="Torneo de XXXX en XXXX Plataforma">
+                    </a>
                 </div>
-               
-                <div class="secundary_image_tournaments" style="background-image: url(./media/imagenes/5.jpg);">    
-                    <div class="promo_tournament_text">
-                        <h3>Torneo 2</h3>
-                        <p>13 de Noviembre</p>
-                        <p>Prize = 750 U$D</p>
-                    </div>
-                </div>
-                
-                
-            </div>
+                <div class="secundary_image_tournaments">
+                    <a href="https://www.communitygaming.io/tournament/latam-sur-mobile-crypto-maker-series-free-fire-3">
+                        <img class="img_home_tournaments1" src="./media/imagenes/torneo1.png" alt="Torneo de XXXX en XXXX Plataforma">
+                        </a>
+
+                    </div> 
+        </div>
 
             <div class="next_tournaments_column2">
-                <div class="secundary_image_tournaments" style="background-image: url(./media/imagenes/5.jpg);">    
-                    <div class="promo_tournament_text">
-                        <h3>Torneo 2</h3>
-                        <p>13 de Noviembre</p>
-                        <p>Prize = 750 U$D</p>
+                <div class="secundary_image_tournaments">
+                    <a href="https://www.communitygaming.io/tournament/latam-sur-mobile-crypto-maker-series-free-fire-3">
+                        <img class="img_home_tournaments1" src="./media/imagenes/torneo2.png" alt="Torneo de XXXX en XXXX Plataforma">
+                        </a>
                     </div>
-                </div>
-               
-                <div class="secundary_image_tournaments" style="background-image: url(./media/imagenes/5.jpg);">    
-                    <div class="promo_tournament_text">
-                    <h3>Torneo 2</h3>
-                    <p>13 de Noviembre</p>
-                    <p>Prize = 750 U$D</p>
-                    </div> 
-                </div>
-                
-                
+                    <div class="secundary_image_tournaments">
+                        <a href="https://www.communitygaming.io/tournament/latam-sur-mobile-crypto-maker-series-free-fire-3">
+                            <img class="img_home_tournaments1" src="./media/imagenes/torneo2.png" alt="Torneo de XXXX en XXXX Plataforma">
+                            </a>
+
+                        </div> 
             </div>
 
-
+    
 
     </section> 
 
@@ -167,10 +150,10 @@
 
     <section>
         <div class="juegos">
-            <div class="logosJuegosMain" style="background-image: url(./media/imagenes/logojuego1.png);"></div>
-            <div class="logosJuegosMain" style="background-image: url(./media/imagenes/logojuego2.png);"></div>
-            <div class="logosJuegosMain" style="background-image: url(./media/imagenes/logojuego3.png);"></div>
-            <div class="logosJuegosMain" style="background-image: url(./media/imagenes/logojuego4.png);"></div>
+            <img class="logosJuegosMain" src="./media/imagenes/logojuego1.png" alt="Imagen de Valorant Institucional">
+            <img class="logosJuegosMain" src="./media/imagenes/logojuego2.png" alt="Imagen de PUBG Institucional">
+            <img class="logosJuegosMain" src="./media/imagenes/logojuego3.png" alt="Imagen de APEX EA Institucional">
+            <img class="logosJuegosMain_free" src="./media/imagenes/logojuego4.png" alt="Imagen de Free Fire Institucional">
 
         </div>
     </section>

@@ -1,0 +1,91 @@
+			/*********************** SECCION DE FOOTER DE PAGINAS  *******/
+
+            .seccionFooter {
+                display: grid;
+                position: sticky;
+                width: 100vw;;
+                grid-template-columns: 2fr 1fr 4fr;
+                grid-template-rows: 200px;
+                background: linear-gradient(to top, #F83A01  , #f88315);
+                /* margin-top: 500px; */
+                border-radius: 20px 15px 20px 15px;
+                border-top: 1px solid white;
+                box-shadow: 5px 0 10px red;
+                justify-content: space-around;
+                grid-template-areas: 	
+                
+                "seccionCopyright socialMediaPanel contactoPanel"
+                ;
+            }
+            
+            .seccionCopyright {
+                grid-area: seccionCopyright;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px;
+                grid-template-areas: 	
+                
+                "logoFooter textoFooterLogo"
+                "logoFooter textoFooterLogo"
+                ;
+            }
+            
+            .textoFooterLogo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .imgFooterLogo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .logoFooter{
+                height: 170px;
+                width: 170px;
+            }
+            
+            .socialMediaPanel {
+                grid-area: socialMediaPanel;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 50px 50px 50px;
+                grid-template-areas: 
+                "encabezadoSocialMedia encabezadoSocialMedia encabezadoSocialMedia"
+                "imagenesSocialMedia imagenesSocialMedia imagenesSocialMedia"
+                "imagenesSocialMedia imagenesSocialMedia imagenesSocialMedia"
+                ;
+                align-content: center;
+                justify-items: center;
+            }
+            
+            .encabezadoSocialMedia {
+                grid-area: encabezadoSocialMedia;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
+            
+            .imagenesSocialMedia{
+                height: 50px;
+                width: 50px;
+                grid-area: imagenesSocialMedia;
+            }
+            
+            .contactoPanel {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                p {
+                    font-size: 35px;
+                    a {
+                        font-size: 25px;
+                        text-decoration: none;
+                    }
+                }
+            }

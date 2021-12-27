@@ -1,24 +1,19 @@
 *{
 	margin: 0;
 	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
 }
 
-@import './imports/text-boxsize';
-@import './imports/_mainmenu';
+@import './imports/footerdesign';
+@import './imports/mainmenu';
 @import './imports/torneosmain';
 @import './imports/contacto';
 @import './imports/noticiasblog';
 @import './imports/404error';
-@import './imports/mquerry';
+@import './imports/latampro';
+@import './imports/colors';
 
-
-@keyframes tarjetas{
-	50% {border-color: #F83A01;}
-}
-
-@keyframes tarjetas1{
-	50% {border-color: #F9CA21;}
-}
 
 main {
 	font-family: Oswald;
@@ -33,14 +28,75 @@ body {
 	font-family: Oswald;
 }
 
-.descripcionOrg {
-	display: flex;
+
+.contenidoBox {
+	width: 90%;
+	max-width: 4000px;
 	margin: auto;
-	width: 80%;
-	justify-content: space-around;
-	padding: 40px 20px;
-	padding-bottom: 6%;
-}
+	padding: 40px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center; }
+  
+  .next_tournaments_column1, .next_tournaments_column2 {
+	display: flex;
+	flex-direction: column;
+	max-height: 100%; }
+  
+  .principal_image_tournaments {
+	border-radius: 10px;
+	text-align: center;
+	min-width: 350px;
+	height: 100%;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	width: 35%;
+	border: 3px solid #F83A01;
+	box-shadow: 0 0 10px #F83A01;
+	animation: tarjetas1 2s infinite; }
+  
+  .secundary_image_tournaments {
+	border-radius: 10px;
+	min-height: 300px;
+	font-weight: bold;
+	/* padding: 20px; */
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	width: 350px;
+	margin: 10px;
+	align-self: center;
+	border: 3px solid #a79710;
+	box-shadow: 0 0 10px yellow;
+	animation: tarjetas 2s infinite; }
+
+	.img_home_tournaments1{
+		width: 350px;
+	}
+  
+  .texto {
+	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	justify-content: flex-end;
+	align-items: flex-start; }
+  
+  .promo_tournament_text {
+	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: flex-start; }
+
+
+
+/* BOTONES DE LOG IN Y LOG OFF */
+
 
 .login{
 	margin-bottom: 100px;
@@ -72,6 +128,15 @@ body {
 	font-size: 30px;
 }
 
+.descripcionOrg {
+	display: flex;
+	margin: auto;
+	width: 80%;
+	justify-content: space-around;
+	padding: 40px 20px;
+	padding-bottom: 6%;
+}
+
 .textProxTorneos {
 	text-align: center;
 	margin: 2%;
@@ -89,9 +154,7 @@ body {
 }
 
 .logosJuegosMain {
-	/* border-radius: 20px; */
 	text-align: center;
-	padding: 66px;
 	background-size: cover;
 	background-position: center center;
 	width: 250px;
@@ -112,138 +175,101 @@ h4 {
 	padding: 10px;
 }
 
-.contenedorPagina {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+
+
+@media screen and (max-width: 1570px) {
+	.menu_principal .menu_bar_items li a  {
+		font-size: 30px;
+
+	}
+
+	.menu_principal .menu_bar_items_log li a {
+		font-size: 15px;
+		margin-top: 15px;
+
+	}
+
 }
 
-.contenedorPagina h4 {
-	font-size: 20px;
-	text-align: center;
-	margin: 5px;
-}
+@media screen and (max-width: 1360px) {
 
-.seccionFooter {
-	display: grid;
-	position: sticky;
-	grid-template-columns: 2fr 1fr 4fr;
-	grid-template-rows: 200px;
-	background: linear-gradient(to top, #F83A01  , #f88315);
-	/* margin-top: 500px; */
-	border-radius: 20px 15px 20px 15px;
-	border-top: 1px solid white;
-	box-shadow: 5px 0 10px red;
-	justify-content: space-around;
-	grid-template-areas: 	
+
+	.menu_bar_items_log {
+		display: none;
+
+	}
+
 	
-	"seccionCopyright socialMediaPanel contactoPanel"
-	;
-}
+	footer div p {
+		margin-left: 55px;
+	}
 
-.seccionCopyright {
-	grid-area: seccionCopyright;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px;
-	grid-template-areas: 	
-	
-	"logoFooter textoFooterLogo"
-	"logoFooter textoFooterLogo"
-	;
-}
-
-.textoFooterLogo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.imgFooterLogo{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.logoFooter{
-	height: 170px;
-	width: 170px;
-}
-
-.socialMediaPanel {
-	grid-area: socialMediaPanel;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 50px 50px 50px;
-	grid-template-areas: 
-	"encabezadoSocialMedia encabezadoSocialMedia encabezadoSocialMedia"
-	"imagenesSocialMedia imagenesSocialMedia imagenesSocialMedia"
-	"imagenesSocialMedia imagenesSocialMedia imagenesSocialMedia"
-	;
-	align-content: center;
-	justify-items: center;
-}
-
-.encabezadoSocialMedia {
-	grid-area: encabezadoSocialMedia;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 25px;
-}
-
-.imagenesSocialMedia{
-	height: 50px;
-	width: 50px;
-	grid-area: imagenesSocialMedia;
-}
-
-.contactoPanel {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-    
-    p {
-        font-size: 35px;
-        a {
-            font-size: 25px;
-            text-decoration: none;
-        }
-    }
-}
-
-.imagen_Torneo{
-	height: 250px;
-	width: 250px;
+	footer div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
 }
 
 
 
-@media screen and (max-width: 600px) {
-	
+@media screen and (max-width: 1150px) { 
+	.checkbtn {
+		display: block;
+	}
 
-	.contenidoBox {
-		max-width: 800px;
+	.logo{
+		margin-left: 40vw;
+		width: 150px;
+		height: 150px;
+		
 	}
 
 	.menu_principal {
-		max-width: 100%;
-		flex-direction: column;
-		height: 170px;
+		width: 100vw;
 	}
 
-	.menu_bar_items {
-		visibility: hidden;
+	.menu_principal .menu_bar_items {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		height: 60px;
+		background: #f88315;
+		top: 80px;
+		top: -100%;
+		text-align: center;
+		transition: all .5s;
+		margin-left: 0%;
+		border-radius: 15px 20px 15px 20px;
+		border-bottom: 1px solid $gris;
+		box-shadow: 5px 0 10px $rojo;
+		justify-content: center;
 	}
 
-	.menu_bar_items_log {
-		visibility: hidden;
+	.menu_principal .menu_bar_items li {
+		display: inline-block;
+		justify-content: center;
+		margin: 0 35px;
+		line-height: 50px;
+		}
+
+
+	li a:hover, li a.active{
+		background: none;
+		color: red;
+		
+	}
+
+	#check:checked ~ ul {
+		top: 150px;	
 	}
 
 	.textProxTorneos {
-		font-size: 25px;
-		margin-top: 35px;
+		font-size: 45px;
+		margin-top: 85px;
 	}
 
 	.descripcionOrg {
@@ -260,7 +286,7 @@ h4 {
 		flex-direction: column;
 		align-content: stretch;
 		margin-top: 0px;
-		max-width: 100%;
+		width: 100vw;
 	}
 
 	footer div {
@@ -280,9 +306,15 @@ h4 {
 		margin-bottom: 100px;
 	}
 	.juegos .logosJuegosMain{
-		height: 100%;
-		width: 190px;
+		height: 450px;
+		width: 650px;
 
+		
+	}
+
+	.juegos .logosJuegosMain_free {
+		height: 350px;
+		width: 450px;
 	}
 
 	.textProxTorneos {
@@ -290,21 +322,107 @@ h4 {
 		text-decoration: none;
 	
 	}
+	
 
-	.menu_bar_items {
-		display: none;
-		max-width: 450px;
+
+}
+
+@media screen and (max-width: 870px) { 
+	
+	.menu_principal {
+		width: 100vw;
 	}
-	
+	.menu_principal .menu_bar_items {
+		width: 100%;
+		height: 110px;
+		align-items: center;
+
+	}
+
+	.menu_principal .menu_bar_items li a  {
+		font-size: 20px;
+		line-height: 55px;
+
+	}
+
+	.juegos .logosJuegosMain{
+		height: 350px;
+		width: 450px;
+
+		
+	}
+
+	.juegos .logosJuegosMain_free {
+		height: 250px;
+		width: 350px;
+	}
 
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) { 
 	
-}
+	.checkbtn {
+		line-height: 130px;
+	}
 
-@media screen and (max-width: 600px) {
+	.menu_principal {
+		height: 130px;
+		width: 100vw;
+	}
+
+	.logo {
+		margin-left: 36vw;
+		width: 140px;
+		height: 140px;
+	}
+	.menu_principal .menu_bar_items {
+		width: 100%;
+		height: 110px;
+		align-items: center;
+		flex-direction: column;
+
+	}
+
+	.menu_principal .menu_bar_items li a  {
+		font-size: 20px;
+		line-height: 55px;
+
+	}
+
+	.juegos .logosJuegosMain{
+		height: 150px;
+		width: 200px;
+		padding: 0px;
+
+		
+	}
+
+	.juegos .logosJuegosMain_free {
+		height: 150px;
+		width: 200px;
+	}
+
+	.menu_principal .menu_bar_items {
+		width: 100%;
+		height: 261px;
+	}
+
+	#check:checked ~ ul {
+		top: 134px;	
+	}
+
+	footer div p {
+		margin-left: 55px;
+	}
+
+	footer div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
 
 }
 
